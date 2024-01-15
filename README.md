@@ -1,20 +1,57 @@
-**Dmytro Kopylets**
+## Dmytro Kopylets
+***
 
-My test work for getting a job as a Junior PHP Developer
+**my contacts:**
+* dm.kopylets@gmail.com
+* https://t.me/Dmytro_Kopylets
 
+***
 
-**Task 1 from 2**
+**My test work for getting a job as a Junior PHP Developer**
 
-**to start the task1 program in the command line, use:**
+**Task 2 from 2**
+
+***
+
+Full text of the task here [task](task%2FTaskJuniorPhp.pdf)
+
+***
+
+git clone https://github.com/dmkopylets/abcGroupTest.git
+
+**to build docker containers use:**
+
+copy file .env.example to .env
 
 make dc-build
 
+**to start the containers use:**
+
 make dc-up
+
+**then install packages for vendors:**
 
 make composer-i
 
-make bash
+**then initialize the database:**
 
-**php task1.php app:generate** 
+make db-init
+
+***
+
+in the future could only use 
+**make dc-up**
+
+**it will be possible to test the application in a browser at localhost**
+
+
+**  http://localhost/api/v1/clicks ... - API responses
+    ![backend.png](task%2Fbackend.png)   
+
+**  http://localhost/api/documentation - Swagger API documentation
+    ![documentation.png](task%2Fdocumentation.png)    
+
+and to stop docker containers use 
+**make dc-down**
 
 
