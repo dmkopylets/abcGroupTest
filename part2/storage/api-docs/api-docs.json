@@ -1,0 +1,64 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Laravel Swagger API documentation for test task",
+        "contact": {
+            "name": "Dmytro",
+            "email": "dm.kopylets@gmail.com"
+        },
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/clicks-with-actions": {
+            "get": {
+                "tags": [
+                    "clicks"
+                ],
+                "summary": "clicks with actions",
+                "operationId": "getClicksListWithActions",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {}
+                        }
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "404": {
+                        "description": "clicks not found"
+                    }
+                }
+            }
+        },
+        "/api/clicks-without-actions": {
+            "get": {
+                "tags": [
+                    "clicks"
+                ],
+                "summary": "clicks with actions",
+                "operationId": "getClicksListWithoutActions",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {}
+                        }
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "404": {
+                        "description": "articles not found"
+                    }
+                }
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "clicks"
+        }
+    ]
+}
